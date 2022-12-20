@@ -1,0 +1,26 @@
+{
+  "name": "food-tracker-app",
+  "version": "1.0.0",
+  "description": "food-tracker-app",
+  "default": "src/index.html",
+  "scripts": {
+    "start": "parcel index.html",
+    "predeploy": "rm -rf dist && parcel build index.html --public-url http://edwards19.github.io/food-tracker-app",
+    "deploy": "gh-pages -d dist"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+http://edwards19.github.io/food-tracker-app.git"
+  },
+  "author": "",
+  "license": "MIT",
+  "bugs": {
+    "url": "http://edwards19.github.io/food-tracker-app/issues"
+  },
+  "homepage": "http://edwards19.github.io/food-tracker-app",
+  "dependencies": {
+    "chart.js": "^3.5.0",
+    "parcel": "^2.0.0-beta.2",
+    "snackbar": "^1.1.0"
+  }
+}
